@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+/* ===header============== */
+header {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+
+    background-color: rgb(212, 212, 212);
+
+    background-repeat: no-repeat;
+
+    display: flex;
+    /* justify-content: center; */
+
+    padding-top: 300px;
+
+    position: relative;
+    background-image: url(../img/picture.png);
+    background-position: center center;
+}
+
+/* .port {
+    display: flex;
+    justify-content: center;
+} */
+
+header .tex1 {
+    font-size: 150px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+header .tex2 {
+    font-size: 220px;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+
+header .tex3 {
+    font-size: 25px;
+    position: absolute;
+    right: 200px;
+    top: 450px;
+    color: #757575;
+}
+
+/* ==========================ROLL========================== */
+
+/* body {
+    overflow-x: hidden;
+} */
+
+.roll {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    font-size: 80px;
+
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
+
+    /* margin-top: 50px; */
+    background-color: black;
+
+    position: absolute;
+    top: 850px;
+}
+
+.roll div {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* position: absolute; */
+
+    left: 0px;
+
+    animation: slide 20s infinite linear;
+}
+/* .roll span {
+    margin: 0px 15px;
+} */
+
+.roll > div:first-child {
+    color: white;
+}
+
+.roll > div:last-child {
+    color: white;
+    animation-delay: -0.04s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* =======visual========== */
+
+#visual {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+
+    background-color: rgb(212, 212, 212);
+
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+
+    padding-top: 300px;
+
+    position: relative;
+}
+/* ====== */
+.poto {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#visual .box1 {
+    color: brown;
+}
+
+#visual .box1 h1 {
+    margin-bottom: 30px;
+    font-size: 100px;
+}
+
+#visual h3 {
+    font-size: 70px;
+}
+
+#visual .box1 div {
+    color: blue;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+/* =====학력사항 부터 ======== */
+
+#visual .box2 {
+    padding-top: -70px;
+}
+
+#visual .box2 h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+#visual .box2 li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
